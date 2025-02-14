@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's</title>
+    <link rel="stylesheet" href="../question/assets/css/style.css">
+</head>
+<body>
+    <div id="question-container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <!-- Using an <a> tag for the "Yes" button -->
+            <a href="../yes/index.html" id="yesButton" class="button">Yes</a>
+            <button id="noButton">No</button>
+        </div>
+        <div id="thankYouMessage" class="hidden">Thank you so much for saying Yes!</div>
+        <div id="noMessage" class="hidden">Let me ask you again!</div>
+    </div>
+
+    <!-- Pop-up Modal for the "Let me ask you again" message -->
+    <div id="popupModal" class="popup-modal hidden">
+        <div class="modal-content">
+            <h2>Let me ask you again!</h2>
+        </div>
+    </div>
+
+    <!-- Pop-up Modal for the "Thank you" message -->
+    <div id="thankYouPopup" class="popup-modal hidden">
+        <div class="modal-content">
+            <h2>Thank you so much for saying Yes!</h2>
+        </div>
+    </div>
+
+    <script src="../question/assets/js/script.js"></script>
+</body>
+</html>
